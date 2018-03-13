@@ -145,6 +145,7 @@ hr{
 
  .userCard .pictureAndText{
      padding: 50px;
+     overflow: hidden;
  }
 
  .userCard dl dt,
@@ -164,7 +165,7 @@ hr{
  }
 
  .userCard >footer .media{
-     background: #e6686a;
+     background: black;
      text-align: center;
  }
 
