@@ -3,7 +3,7 @@
 <head>
    <tittle>马心悦的个人简历</tittle>
    <link rel="stylesheet" href="./a.css">
-   <script src="//at.alicdn.com/t/font_587107_w6rr0jsuqsrftj4i.js"></script>
+   <script src="//at.alicdn.com/t/font_590674_2c6f8q99nq4a38fr.js"></script>
    <style type="text/css">
     .icon {
        width: 1em; height: 1em;
@@ -21,7 +21,7 @@
             <span class="rs">RS</span>
             <span class="card">card</span>
           </a>
-          <nav style:"float:right;">
+          <nav>
             <ul class="clearfix">
              <li>
                <a href="#">关于</a>
@@ -61,26 +61,26 @@
      <span class="welcome">Hello
        <span class="triangle"></span>
      </span>
-     <h1>马心悦</h1>
-     <p>前端开发工程师</p>
+     <h1>I'm Maxinyue</h1>
+     <p>Developer and Startup entrepreneur</p>
      <hr>
      <dl>
-      <dt>年龄</dt>
+      <dt>AGE</dt>
       <dd>22</dd>
-      <dt>所在城市</dt>
-      <dd>西安</dd>
-      <dt>邮箱</dt>
+      <dt>CITY</dt>
+      <dd>Xi'an</dd>
+      <dt>E-MAIL</dt>
       <dd>Jayce_ma.xa@foxmail.com</dd>
-      <dt>手机</dt>
+      <dt>PHONE</dt>
       <dd>18292034074</dd>
      </dl>
      </div>
     </div>
      <footer class="media">
       <a href="#">
-          <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-github"></use>
-          </svg>
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-twitter"></use>
+      </svg>
       </a>
       <a href="#">
           <svg class="icon" aria-hidden="true">
@@ -89,50 +89,109 @@
       </a>
       <a href="#">
           <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-twitter"></use>
-          </svg>
-      </a>
-      <a href="#">
-          <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-free-code-camp"></use>
+              <use xlink:href="#icon-github"></use>
           </svg>
       </a>
      </footer>
     </div>
+  
+  <p class="downloadResume-wrapper">
+   <a class="downloadResume" href="./resume.pdf" target="_blank" download>下载PDF简历</a>
+  </p>
 
-   <a class="button" href="#">下载PDF简历</a>
-   
-   <p>
+   <p class="selfIntroduction">
      Hello!I am Jayce.<br>
      Senior Web Developer specializing in front end development.
    </p>
   
   </main>
-   <section>
+   <section class="skills">
      <h2>技能</h2>
-    <ol>
-      <li>HTML 5 &amp; CSS 3</li>
-      <li>JavaScript</li>
-      <li>jQuery</li>
-      <li>Vue</li>
-      <li>React</li>
-      <li>HTTP</li>
-    </ol>
-   </section>
-   <section>
+    <ol class="clearfix">
+      <li>
+        <h3>
+          HTML 5 &amp; CSS 3
+        </h3>
+        <div class="progressBar">
+          <div class="progress"></div>
+        </div>
+      </li>
+      <li>
+          <h3>
+            JavaScript
+          </h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+            <h3>
+             jQuery
+            </h3>
+            <div class="progressBar">
+              <div class="progress"></div>
+            </div>
+          </li>
+          <li>
+              <h3>
+                Vue.js
+              </h3>
+              <div class="progressBar">
+                <div class="progress"></div>
+              </div>
+            </li>
+            <li>
+                <h3>
+                  React.js
+                </h3>
+                <div class="progressBar">
+                  <div class="progress"></div>
+                </div>
+              </li>
+              <li>
+                  <h3>
+                    Node.js
+                  </h3>
+                  <div class="progressBar">
+                    <div class="progress"></div>
+                  </div>
+                </li>
+             </ol>
+           </section>
+    <section class="portfolio">
      <h2>作品集</h2>
      <nav>
-       <ol>
-         <li>所有</li>
-         <li>框架</li>
-         <li>原生JS &amp; CSS</li>
+       <ol clear="clearfix">
+         <li id="portfolio1">所有</li>
+         <li id="portfolio2">框架</li>
+         <li id="portfolio3">原生JS &amp; CSS</li>
        </ol>
+       <div id="portfolioBar" class="bar state-1">
+         <div class="bar-inner"></div>
+       </div>
      </nav>
+     <script>
+       portfolio1.onclick= function(){
+        portfolioBar.className = 'bar state-1'
+       }
+       portfolio2.onclick= function(){
+        portfolioBar.className = 'bar state-2'
+       }
+       portfolio3.onclick= function(){
+        portfolioBar.className = 'bar state-3'
+       }
+     </script>
 
-     <div class="jobs">
-       <div class="big"></div>
-       <div class="small"></div>
-       <div class="small"></div>
+     <div class="works" style="height: 597px;">
+       <div class="big" style="top:0;left:0;">
+         <img src="./img/1.jpg" alt="作品1">
+       </div>
+       <div class="small"  style="top:0;left:645px;">
+          <img src="./img/2.jpg" alt="作品2">
+       </div>
+       <div class="small"  style="top:298px;left:645px;">
+          <img src="./img/3.jpg" alt="作品3">
+       </div>
      </div>
    
     </section>
