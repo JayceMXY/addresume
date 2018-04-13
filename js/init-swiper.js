@@ -19,7 +19,9 @@
         },
         initSwiper: function () {
             this.swiper = new Swiper(
-                this.view.querySelector(' .swiper-container'),
+                this.view.querySelector('.swiper-container'),
+                // html 的层级 #mySlides 在 .swiper-container 的外面
+                // 所以上面这个方法是找不到元素的
                 this.swiperOptions
             )
         }
