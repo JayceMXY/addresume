@@ -21,7 +21,9 @@
             var message = new Message();
             return message.save({ //promise对象
                 'name': name,
-                'content': content
+                'content': {
+                    content: content
+                }
             })
         }
     }
@@ -30,7 +32,7 @@
         view: null,
         model: null,
         messageList: null,
-        init: function (view， model) {
+        init: function (view, model) {
             this.view = view
             this.model = model
 
@@ -43,17 +45,19 @@
         loadMessages: function () {
             this.model.fetch().then(
                 (messages) => {
-                    let array = message.map((item) => item.attributes)
+                    let array = messages.map((item) => item.attributes)
                     array.forEach((item) => {
                         let li = document.createElement('li')
-                        li.innerText = `${item.name}: ${item.content}`
+                        li.innerText = `${item.name}: ${item.content.content}`
+                        // item.content 是个对象 item.content = { content: '马心悦是傻逼' }
+                        // item.content.content 所以这样才能取到值
                         this.messageList.appendChild(li)
                     })
                 }
             )
         },
         bindEvents: function () {
-            this.form.addEventListener('submit', function (e) {
+            this.form.addEventListener('submit', (e) => {
                 e.preventDefault()
                 this.saveMessage()
             })
@@ -64,7 +68,7 @@
             let name = myForm.querySelector('input[name=name]').value
             this.model.save(name, content).then(function (object) {
                 let li = document.createElement('li')
-                li.innerText = `${object.attributes.name}: ${object.attributes.content}`
+                li.innerText = `${object.attributes.name}: ${object.attributes.content.content}`
                 let messageList = document.querySelector('#messageList')
                 messageList.appendChild(li)
                 myForm.querySelector('input[name=content]').value = ''
