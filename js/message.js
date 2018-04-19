@@ -2,7 +2,7 @@
     var view = View('section.message')
 
     var model = Model({
-        'resourceName': message
+        'resourceName': 'Message'
     })
 
     var controller = Controller({
@@ -48,7 +48,7 @@
                 })
             }
 
-        }
+        })
         controller.init(view, model)
 
     }.call()
