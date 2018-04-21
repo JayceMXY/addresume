@@ -37,7 +37,9 @@
                 let name = myForm.querySelector('input[name=name]').value
                 this.model.save({
                     'name': name,
-                    'content': content
+                    'content': {
+                        content: content,
+                    },
                 }).then(function (object) {
                     let li = document.createElement('li')
                     li.innerText = `${object.attributes.name}: ${object.attributes.content.content}`

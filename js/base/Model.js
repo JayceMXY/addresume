@@ -14,7 +14,7 @@ window.Model = function (options) {
             return query.find() //promise对象
         },
         //创建数据
-        save: function (Object) {
+        save: function (object) {
             var X = AV.Object.extend(resourceName);
             var x = new X();
             return x.save(object)
