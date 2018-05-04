@@ -11,6 +11,8 @@ a {
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-family: "Fredoka Three", sans-serif;
 }
 
 hr {
@@ -99,7 +101,7 @@ h6 {
 .topNavBar nav>ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding-right: 66px;
 }
 
 .topNavBar nav>ul>li {
@@ -110,7 +112,7 @@ h6 {
 }
 
 .topNavBar nav>ul>li>a {
-    font-size: 12px;
+    font-size: 15px;
     color: inherit;
     font-weight: bold;
     border-top: 3px solid transparent;
@@ -173,10 +175,11 @@ h6 {
 }
 
 .topNavBar .logo {
-    font-size: 24px;
-    font-family: "Arial Black";
     padding-top: 3px;
     padding-bottom: 4px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Fredoka One", sans-serif;
 }
 
 .topNavBar .logo .rs {
@@ -190,14 +193,14 @@ h6 {
 
 .banner {
     height: 515px;
-    background-image: url(./img/rs-cover-2-2-1-1.jpg);
+    background-image: url(./img/cover.jpg);
     background-position: center center;
     background-size: cover;
 }
 
 .banner .mask {
     height: 515px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .userCard {
@@ -274,7 +277,7 @@ h6 {
 
 .userCard>footer.media>a {
     display: inline-block;
-    width: 40px;
+    width: 50px;
     line-height: 30px;
     padding: 5px 0;
     border-radius: 50%;
@@ -315,7 +318,7 @@ body>main .downloadResume {
 }
 
 body>main .downloadResume:hover {
-    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.3);
 }
 
 .selfIntroduction {
@@ -378,7 +381,7 @@ section.skills .progressBar {
     overflow: hidden;
 }
 
-section.skills .progressBar>.progress {
+section.skills .progressBar>.progress1 {
     height: 100%;
     background: #e6686a;
     width: 70%;
@@ -387,7 +390,57 @@ section.skills .progressBar>.progress {
     transition: all 1s;
 }
 
-section.skills.offset .progress {
+section.skills .progressBar>.progress2 {
+    height: 100%;
+    background: #e6686a;
+    width: 75%;
+    border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section.skills .progressBar>.progress3 {
+    height: 100%;
+    background: #e6686a;
+    width: 65%;
+    border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section.skills .progressBar>.progress4 {
+    height: 100%;
+    background: #e6686a;
+    width: 60%;
+    border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section.skills .progressBar>.progress5 {
+    height: 100%;
+    background: #e6686a;
+    width: 40%;
+    border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section.skills .progressBar>.progress6 {
+    height: 100%;
+    background: #e6686a;
+    width: 50%;
+    border-radius: 2px;
+    transform: translateX(0);
+    transition: all 1s;
+}
+
+section.skills.offset .progress1,
+section.skills.offset .progress2,
+section.skills.offset .progress3,
+section.skills.offset .progress4,
+section.skills.offset .progress5,
+section.skills.offset .progress6 {
     transform: translateX(100%);
 }
 
