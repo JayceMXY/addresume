@@ -10,12 +10,12 @@ window.Model = function (options) {
             })
         },
         fetch: function () {
-            var query = new AV.Query('resourceName');
+            var query = new AV.Query(resourceName);
             return query.find() //promise对象
         },
         //创建数据
-        save: function (Object) {
-            var X = AV.Object.extend('resourceName');
+        save: function (object) {
+            var X = AV.Object.extend(resourceName);
             var x = new X();
             return x.save(object)
         }
