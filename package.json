@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "leancloud-storage": "^3.6.5"
+    "leancloud-storage": "^3.6.5",
+    "node-sass": "^4.9.0"
   },
   "devDependencies": {},
   "scripts": {
