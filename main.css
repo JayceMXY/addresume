@@ -518,15 +518,18 @@ section.message>form>.sendmessage{
     user-select: none;
     transition: all 0.4s;
     padding: 10px 20px;
-    border: 1px solid #DFE2E6;
     cursor: pointer;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
+.project>.projectTab>.tab>li.active {
+    border: 1px solid #DFE2E6;
+}
+
 .project>.projectTab>.content {
     text-align: left;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .project>.projectTab>.content>a {
@@ -552,6 +555,7 @@ section.message>form>.sendmessage{
 
 .project>.projectTab>.content>li.active {
     display: flex;
+    box-sizing: border-box;
 }
 
 .project>.projectTab>.content>li>img {
@@ -565,7 +569,7 @@ section.message>form>.sendmessage{
 }
 
 .project>.projectTab>.content>li >.left{
-    margin-right: 400px;
+    margin-right: 200px;
     padding: 10px;
 }
 
