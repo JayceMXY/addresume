@@ -521,10 +521,13 @@ section.message>form>.sendmessage{
     cursor: pointer;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: none;
 }
 
 .project>.projectTab>.tab>li.active {
     border: 1px solid #DFE2E6;
+    border-bottom: none;
 }
 
 .project>.projectTab>.content {
