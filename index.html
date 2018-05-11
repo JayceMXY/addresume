@@ -22,10 +22,7 @@
             <a href="#siteSkills">技能</a>
           </li>
           <li>
-            <a href="#siteWorks">作品展示</a>
-          </li>
-          <li>
-            <a href="#siteMessages">留言区</a>
+            <a href="#siteWorks">我的项目</a>
           </li>
         </ul>
       </nav>
@@ -159,48 +156,59 @@
   </section>
 
   <section data-x id="siteWorks" class="portfolio">
-    <h2>作品集</h2>
-    <div class="works">
-      <div class="img-works" data-url="https://github.com/jaycemxy/nav-demo">
-        <img src="./img/works/nav-page.jpg">
+    <div class="project">
+      <h2>我的项目</h2>
+      <div class="projectTab">
+        <ul class="tab">
+          <li>会动的小黄人</li>
+          <li>我的导航</li>
+          <li>canvas画板</li>
+        </ul>
+        <ul class="content">
+          <li class="active">
+            <div class="left">
+              <h3>会动的小黄人</h3>
+              <p>使用HTML5与CSS3制作了静态的小黄人样式，使用原生JS实现一边显示代码一边绘制小黄人的效果</p>
+              <a href="https://jaycemxy.github.io/minion-demo/" target="_blank">项目地址（点我）</a>              
+            </div>
+            <div class="right">
+              <img src="./img/works/minion-animation.jpg" class="vp">
+            </div>
+          </li>
+          <li>
+            <div class="left">
+              <h3>我的导航</h3>
+              <p>使用原生JS实现页面快捷导航，用户可以自己编辑快捷键，也可以在搜索栏选择百度或是谷歌搜索</p>
+              <a href="https://jaycemxy.github.io/nav-demo/" target="_blank">项目地址（点我）</a>
+            </div>
+            <div class="right">
+              <img src="./img/works/nav-page.jpg" class="vp">
+            </div>
+          </li>
+          <li>
+              <div class="left">
+                <h3>canvas画板</h3>
+                <p>使用原生JS实现，调用了canvas API来实现橡皮擦、下载、删除等功能</p>
+                <a href="https://jaycemxy.github.io/canvas-demo/index.html" target="_blank">项目地址（点我）</a>
+              </div>
+              <div class="right">
+                <img src="./img/works/canvas.jpg" class="vp">
+              </div>
+            </li>
+        </ul>
       </div>
-      <div class="description">
-        <h3>导航页</h3>
-        <p class="key-word">作品描述：原生JS给键盘上的字母绑定网址，还可以用户自己编辑网址</p>
-      </div>
-    </div>
-
-    <div class="works">
-      <div class="img-works" data-url="https://github.com/jaycemxy/canvas-demo">
-        <img src="./img/works/canvas.jpg">
-      </div>
-      <div class="description">
-        <h3>canvas画板</h3>
-        <p class="key-word">作品描述：原生JavaScript、canvas的运用、移动端响应式</p>
-      </div>
-    </div>
-
-    <div class="works">
-      <div class="img-works" data-url="https://github.com/jaycemxy/minion-demo">
-        <img src="./img/works/minion-animation.jpg">
-      </div>
-      <div class="description">
-        <h3>画一个小黄人</h3>
-        <p class="key-word">作品描述：原生JavaScript和CSS、动态给script标签添加样式</p>
-      </div>
-    </div>
-
+    </div>  
   </section>
 
   <section class="message">
     <h2>留言</h2>
     <ol id="messageList"></ol>
     <form id="postMessageForm" style="width: 700px; margin: 50px auto;">
-      <label>姓名</label>
+      <label class="name">姓名：</label>
       <input type="text" name="name">
-      <label>内容</label>
+      <label class="leavemessage">留言：</label>
       <input type="text" name="content">
-      <input type="submit" value="send">
+      <input type="submit" value="send" class="sendmessage">
     </form>
   </section>
 
@@ -216,7 +224,7 @@
   <script src="./js/sticky-topbar.js"></script>
   <script src="./js/smoothly-navigation.js"></script>
   <script src="./js/message.js"></script>
-  <script src="./js/works-show-description.js"></script>
+  <script src="./js/project.js"></script>
 </body>
 
 </html>

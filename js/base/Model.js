@@ -13,7 +13,7 @@ window.Model = function (options) {
             var query = new AV.Query(resourceName);
             var now = new Date()
             query.lessThanOrEqualTo('createdAt', now);
-            query.limit(5);
+            query.limit(6);
             query.descending('createdAt');
             return query.find() //promise对象
         },
