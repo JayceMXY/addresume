@@ -523,11 +523,13 @@ section.message>form>.sendmessage{
     border-top-right-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0);
     border-bottom: none;
+    color: #9A9DA2;
 }
 
 .project>.projectTab>.tab>li.active {
     border: 1px solid #DFE2E6;
     border-bottom: none;
+    color: #3d4451;
 }
 
 .project>.projectTab>.content {
@@ -572,7 +574,7 @@ section.message>form>.sendmessage{
 }
 
 .project>.projectTab>.content>li >.left{
-    margin-right: 200px;
+    margin-right: 90px;
     padding: 10px;
 }
 
@@ -582,5 +584,5 @@ section.message>form>.sendmessage{
 
 .project>.projectTab>.content>li >.left > p{
     color: #4d4d4d;
-    
+    margin-bottom: 5px;
 }
