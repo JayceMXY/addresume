@@ -301,11 +301,10 @@ h2{
 .userCard>footer.media>a:hover > .hover-qr-code_wrapper {
     display: block;
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background: #000;
-    color: #fff;
-    top: -100px;
+    width: 200px;
+    height: 200px;
+    left: 80px;
+    bottom: -50px;
 }
 
 .userCard svg {
@@ -608,8 +607,4 @@ section.message>form>.sendmessage{
     line-height: 28px;
     margin-top: -10px;
     margin-right: 350px;
-}
-
-.media> .wechat > a:hover{
-    background: red;
 }
