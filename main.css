@@ -287,10 +287,25 @@ h2{
     padding: 5px 0;
     border-radius: 50%;
     margin: 16px;
+    position: relative;
 }
 
 .userCard>footer.media>a:hover {
     background: #cf5d5f;
+}
+
+.userCard>footer.media>a > .hover-qr-code_wrapper {
+    display: none;
+}
+
+.userCard>footer.media>a:hover > .hover-qr-code_wrapper {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #000;
+    color: #fff;
+    top: -100px;
 }
 
 .userCard svg {
@@ -539,7 +554,7 @@ section.message>form>.sendmessage{
 
 .project>.projectTab>.content {
     text-align: left;
-    /* height: 600px; */
+    margin-bottom: 100px;
 }
 
 .portfolio > .project> .projectTab >.content>.active > .left > a {
@@ -558,7 +573,6 @@ section.message>form>.sendmessage{
     position: relative;
     transition: all 1s;
     width: 100%;
-    height: 100%;
     display: none;
     padding-top: 80px;
 }
@@ -566,7 +580,6 @@ section.message>form>.sendmessage{
 .project>.projectTab>.content>li.active {
     display: flex;
     box-sizing: border-box;
-    margin-bottom: -300px;
 }
 
 .portfolio>.project>.projectTab>.content>.active>.right>img {
