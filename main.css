@@ -11,7 +11,7 @@ a {
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+
     font-family: "Fredoka Three", sans-serif;
 }
 
@@ -33,6 +33,11 @@ h4,
 h5,
 h6 {
     font-weight: normal;
+}
+
+h2{
+    font-weight: bold;
+    color: #4d4d4d;
 }
 
 .clearfix::after {
@@ -555,19 +560,19 @@ section.message>form>.sendmessage{
     width: 100%;
     height: 100%;
     display: none;
-    padding: 80px;
+    padding-top: 80px;
 }
 
 .project>.projectTab>.content>li.active {
     display: flex;
     box-sizing: border-box;
+    margin-bottom: -300px;
 }
 
-.project>.projectTab>.content>li>img {
+.portfolio>.project>.projectTab>.content>.active>.right>img {
     min-width: 200px;
     max-width: 400px;
     max-height: 400px;
-    margin-right: 70px;
     position: absolute;
     right: 0px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
@@ -576,6 +581,8 @@ section.message>form>.sendmessage{
 .project>.projectTab>.content>li >.left{
     margin-right: 90px;
     padding: 10px;
+    margin-top: -15px;
+    margin-left: 100px;
 }
 
 .project>.projectTab>.content>li >.left > h3{
@@ -584,5 +591,12 @@ section.message>form>.sendmessage{
 
 .project>.projectTab>.content>li >.left > p{
     color: #4d4d4d;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    line-height: 28px;
+    margin-top: -10px;
+    margin-right: 350px;
+}
+
+.media> .wechat > a:hover{
+    background: red;
 }
